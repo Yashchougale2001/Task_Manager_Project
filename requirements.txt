@@ -1,0 +1,5 @@
+Flask==2.0.3
+Flask-SQLAlchemy==2.5.1
+Flask-Bcrypt==0.7.1
+Flask-JWT-Extended==3.25.1
+mysqlclient==2.1.1
