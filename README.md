@@ -54,3 +54,34 @@ If you prefer to run the containers in detached mode (in the background), use:
 bash
 Copy code
 docker-compose up --build -d
+
+7. Additional Docker Commands
+To view the running containers:
+
+bash
+Copy code
+docker ps
+To stop individual containers:
+
+bash
+Copy code
+docker stop <container_id>
+To remove containers:
+
+bash
+Copy code
+docker-compose down --rmi all
+Troubleshooting
+Ensure Docker is running properly on your machine.
+If MySQL fails to connect, verify that your environment variables are correct in the .env file.
+If you encounter issues with container networking, try restarting Docker.
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+License
+MIT License
+
+Notes:
+docker-compose.yml Configuration: Ensure that your Docker Compose file is properly set up, including MySQL and Flask services, so users can easily build and run the project.
+Environment Variables: The .env.example should include placeholder values for the environment variables so users know what values they need to provide.
+This README should make it clear and straightforward for anyone downloading your code to get it running on their machine.
